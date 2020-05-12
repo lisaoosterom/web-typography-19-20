@@ -41,7 +41,8 @@ background-color: black;
 }
 .voice3 {
     color: white;
-    text-transform: uppercase;
+	text-transform: uppercase;
+	font-size: 2em;
 }
 #video-placeholder  {
     box-shadow: 2px 2px 2px 2px #0ff;
