@@ -544,7 +544,7 @@ sound 9 hoge piep
   
   .sound9 #video-placeholder{
 	  box-shadow: 0 0 0 0px;
-	animation: piep 42s ease;
+	animation: piep 42s ease-out;
 	  }
 	
 	  @keyframes piep {
@@ -552,7 +552,7 @@ sound 9 hoge piep
 			  transform: scaleY(1);
 			  transform: scaleX(1);
 		  }
-		  99% {
+		  99.5% {
 			transform: scaleY(0.5);
 			transform: scaleX(0.7); 
 
@@ -564,7 +564,7 @@ sound 9 hoge piep
 	  }
 	  .sound9 #closed-captions:before{
 		content: "[Steeds hoger wordende piep]";
-		color: black;
+		color: red;
 		position: absolute;
 		width: 100%;
 		text-align: center;
@@ -576,11 +576,11 @@ sound 9 hoge piep
 	@keyframes piepCC{
 		0% {
 			opacity: 1;
-			font-size: 1em;
+			font-size: 0.5em;
 		}
 		99% {
 			opacity: 1;
-			font-size: 0.5em;
+			font-size: 2em;
 		}
 		100% {
 			opacity: 0;
@@ -596,3 +596,6 @@ sound 9 hoge piep
 		font-size: 3em;
 
 	}
+.p44 body {
+	filter: invert(50%);
+}
