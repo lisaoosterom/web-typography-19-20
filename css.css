@@ -15,7 +15,7 @@ background-color: black;
 	position: absolute;
 	width: 100%;
 	text-align: center;
-	font-size: 2em;
+	font-size: 1.2em;
 	
 }
 #closed-captions .on {
@@ -157,7 +157,7 @@ sound 1 intro
 
 .sound0 #closed-captions:before{
 	content: "[dreigende muziek, met dreunen]";
-	color: white;
+	color: #0ff;
 	position: absolute;
 	width: 100%;
 	text-align: center;
@@ -176,7 +176,7 @@ sound 1 intro
 	}
     99% {
 		opacity: 1;
-		font-size: 0.7em;
+
     }
     100% {
         opacity: 0;
@@ -302,8 +302,8 @@ sound 2 baseline
     80% {
 		transform: translateX(200px);
 		border: 10px;
-		box-shadow: blue;
-		border: 5px solid blue
+		box-shadow:red;
+		border: 5px solid red;
     
     }
    100% {
@@ -328,13 +328,19 @@ sound 2 baseline
 }
 @keyframes alarm{
     0% {
-        opacity: 1;
-    }
+		opacity: 1;
+		color: red;
+	}
+	80% {
+color: red
+	}
     99% {
-        opacity: 1;
+		opacity: 1;
+		color: blue;
     }
     100% {
-        opacity: 0;
+		opacity: 0;
+		
     }
 }
 /* **********************************************
@@ -411,6 +417,7 @@ https://codepen.io/philiprenich/pen/EAIKH
 */
   .sound3 #closed-captions:before{
 	content: "[LAzER ]";
+	text-transform: none;
 	color:  #e78007;
 	position: absolute;
 	width: 100%;
@@ -474,10 +481,19 @@ sound 5 skew
 
 @keyframes skew{
     0% {
-        opacity: 1;
-    }
+		opacity: 1;
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(-15deg);
+	}
+
+	80% {
+transform: rotate(5deg);
+	}
     99% {
-        opacity: 1;
+		opacity: 1;
+		transform: rotate(0deg);
     }
     100% {
         opacity: 0;
@@ -492,31 +508,34 @@ sound 8 buzz
 	background: linear-gradient(90deg, rgba(140,154,130,1) 0%, rgba(157,175,149,1) 100%);
 
 }
+
 .sound8 #video-placeholder {
 	animation: shake 2s ease;
-	box-shadow:  plum;
+	box-shadow: 2 2 2 2px palevioletred;
+	border: palevioletred;
 }
 
 	@keyframes shake {
-		10% {
-		  transform: translate(-1px, 0, 0);
+		10%, 50% {
+		  transform: translateX(-1px);
 		}
 		
-		20% {
-		  transform: translate(2px, 0, 0);
+		20%, 60% {
+		  transform: translateX(2px);
 		}
 	  
-		30% {
-		  transform: translate(-4px, 0, 0);
+		30%, 70% {
+		  transform: translateX(-4px);
 		}
 	  
-		40%{
-		  transform: translate(4px, 0, 0);
+		40%, 80%{
+		  transform: translateX(4px);
 		}
 	  }
-.sound8 #video-placeholder:before {
+
+	  .sound8 #video-placeholder:before {
 		content: "[Electrische trilling shaked]";
-		color:  plum;
+		color:  palevioletred;
 		position: absolute;
 		width: 100%;
 		text-align: center;
@@ -525,7 +544,7 @@ sound 8 buzz
 		animation: shakingCC 2s forwards;
 }
 	
-	@keyframes ShakingCC{
+	@keyframes shakingCC{
 		0% {
 			opacity: 1;
 		}
@@ -553,13 +572,13 @@ sound 9 hoge piep
 			  transform: scaleX(1);
 		  }
 		  99.5% {
-			transform: scaleY(0.5);
-			transform: scaleX(0.7); 
+			transform: scale(0.7);
+			 
 
 		  }
 		  100% {
-			  transform: scaleY(0.001);
-			  transform: scaleX(1);
+			  transform: scale(0.1);
+			
 		  }
 	  }
 	  .sound9 #closed-captions:before{
@@ -588,14 +607,17 @@ sound 9 hoge piep
 		}
 	}
 
-
-
-	  .repeat {
+ .repeat {
 		font-style: italic;
-		text-shadow: black;
 		font-size: 3em;
 
 	}
-.p44 body {
-	filter: invert(50%);
+ .sound10 {
+	filter: grayscale(70%);	
+	background: #BCBDB9;
+}
+
+:before {
+bottom: 150px;
+font-weight: bold;;
 }
