@@ -15,7 +15,7 @@ background-color: black;
 	position: absolute;
 	width: 100%;
 	text-align: center;
-	font-size: 1.2em;
+	bottom: 45%;
 	
 }
 #closed-captions .on {
@@ -26,36 +26,46 @@ background-color: black;
 	opacity: 0;
 	margin: auto;
 }
+
 .voice1 {
-	font-style: italic;
-	margin-left: 5;
-}
-.voice1 {
-    font-style: italic;
-   color: #8ceefd;
-   text-shadow: 0 0 5px #8ceefd,
-   0 0 10px #8ceefd;
+font-style: italic;
+   color: #0072FF;
+   text-shadow: 0 0 5px #0072FF,
+   0 0 10px #0072FF;
+   font-size: 1.5em;
+   margin-top: 20px;
+   letter-spacing: 2px;
 }
 
 .voice2 {
 	color: white;
-	margin-right: 5;
+	font-size: 1.5em;
+	letter-spacing: 0.5px;
 }
 .voice3 {
     color: greenyellow;
 	text-transform: uppercase;
-	font-size: 3em;
+	font-size: 1.5em;
 	font: italic;
 }
 #video-placeholder  {
     box-shadow: 2px 2px 2px 2px #0ff;
     transition: box-shadow 0.3s ease-in-out;
-  margin: auto;
-  display: flex;
-  width: 854px;
-  height: 480px;
- margin-top: 10px;
+  	margin: auto;
+  	display: flex;
+  	width: 854px;
+  	height: 480px;
+ 	margin-top: 15px;
+}
 
+::before {
+	bottom: 30%;
+	font-style: italic;
+}
+
+#closed-captions .repeat {
+	font-size: 5em;
+	top: 35%;
 }
 /* **********************************************
 The first paragraph, with extended timing for 
@@ -189,8 +199,6 @@ font-size: 0.8em;
     }
 }
 
-
-
 .sound0  {
 	animation: changeBackground 3s ease;
 }
@@ -222,7 +230,7 @@ font-size: 0.8em;
 	
 	}
 	45% {
-		filter: blur(5px);
+		filter: blur(10px);
 	}
 	52% {
 		filter: blur(0px);
@@ -268,6 +276,7 @@ sound 1 buzzer
 		transform: scale(1)
     }
 }
+
 
 .sound1 #closed-captions:before{
 	content: "[buzzzzzzzer]";
@@ -445,12 +454,29 @@ https://codepen.io/philiprenich/pen/EAIKH
 }
 
 /* **********************************************
-sound 5 skew
+sound 5 skew & fack off skin job
 
 ********************************************** */
 
+.p6 span {
+	opacity: 0;
+}
+.p6.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+
+}
+.p6.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s .2s;
+
+}
+.p6.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0s .4s;
+}
+
 .sound5 #video-placeholder  {
-  
 	animation: spin 3s ease;
 }
 
@@ -481,8 +507,8 @@ sound 5 skew
 	width: 100%;
 	text-align: center;
 	margin: 5px;
-	margin-top: 20px;
-    animation: skew 2s forwards;
+
+    animation: skew 3s forwards;
 }
 
 @keyframes skew{
@@ -491,105 +517,120 @@ sound 5 skew
 		transform: rotate(0deg);
 	}
 	50% {
-		transform: rotate(-15deg);
+		transform: rotate(-20deg);
 	}
 
 	80% {
-transform: rotate(5deg);
+transform: rotate(40deg);
 	}
     99% {
 		opacity: 1;
-		transform: rotate(0deg);
     }
     100% {
-        opacity: 0;
+		opacity: 0;
+		transform: rotate(0deg);
     }
 }
+
+#cirkle {
+	opacity: 0;
+	width: 20em;
+	height: 20em;
+	border: 0px solid rgb(160,172,148);
+	border-radius: 100%;
+	position: absolute;
+	box-shadow: 0 0 30em rgb(160,172,148);
+	fill: rgb(160,172,148);
+  }
+
+  .sound7 #cirkle {
+	animation: cirkel 2s forwards;
+  }
+  @keyframes cirkel {
+	0% {
+	  opacity: 1;
+	  transform: scale(1);
+	}
+  
+	100% {
+	  opacity: 0;
+	  transform: scale(6);
+	}
+  }
+  
+  .sound7 #closed-captions:before{
+	content: "[DREUN]";
+	color:  rgb(160,172,148);
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	margin: 5px;
+
+    animation: dreun 2s forwards;
+}
+
+@keyframes dreun{
+    0% {
+		opacity: 1;
+		
+	}
+	
+    99% {
+		opacity: 1;
+		font-size: 2em;
+    }
+    100% {
+		opacity: 0;
+		
+    }
+}
+
+
 /* **********************************************
-sound 8 buzz
+sound 8 buzz > NIEUWE SCENE
 
 ********************************************** */
-.sound8  {
-	background: rgb(103,130,138);
-	background: linear-gradient(90deg, rgba(140,154,130,1) 0%, rgba(157,175,149,1) 100%);
-
+.sound8  {	
+	background: rgb(160,172,148);
+	background: linear-gradient(315deg, rgba(160,172,148,1) 0%, rgba(151,163,141,1) 47%, rgba(146,159,134,1) 100%);
 }
 
-.sound8 #video-placeholder {
-	animation: shake 2s ease;
-	box-shadow: 2 2 2 2px palevioletred;
-	border: palevioletred;
-}
 
-	@keyframes shake {
-		10%, 50% {
-		  transform: translateX(-1px);
-		}
-		
-		20%, 60% {
-		  transform: translateX(2px);
-		}
-	  
-		30%, 70% {
-		  transform: translateX(-4px);
-		}
-	  
-		40%, 80%{
-		  transform: translateX(4px);
-		}
-	  }
-
-	  .sound8 #video-placeholder:before {
-		content: "[Electrische trilling shaked]";
-		color:  palevioletred;
-		position: absolute;
-		width: 100%;
-		text-align: center;
-		margin: 5px;
-		margin-top: 20px;
-		animation: shakingCC 2s forwards;
-}
-	
-	@keyframes shakingCC{
-		0% {
-			opacity: 1;
-		}
-		99% {
-			opacity: 1;
-		}
-		100% {
-			opacity: 0;
-		}
-	}
+	 
 	  
 /* **********************************************
 sound 9 hoge piep
 
 ********************************************** */
   
-  .sound9 #video-placeholder{
-	  box-shadow: 0 0 0 0px;
-	animation: piep 42s ease-out;
-	  }
-	
-	  @keyframes piep {
+.sound9 #video-placeholder{
+	border: red;
+	box-shadow: 2px 10px 10px 2px red;
+	animation: piep 45s ease-out;
+
+}
+
+@keyframes piep {
 		  0% {
 			  transform: scaleY(1);
 			  transform: scaleX(1);
 		  }
-		  99.5% {
+		  90% {
 			transform: scale(0.7);
 			opacity: 1;
 			 
 
 		  }
-		  100% {
-			  transform: scale(0.1);
+		  97% {
 			  opacity: 0;
+		}
+		  100% {
+			  transform: scale(0.7);
+			  opacity: 1;
 			
 		  }
 	  }
-	  .sound9 #closed-captions:before{
+.sound9 #closed-captions:before{
 		content: "[Steeds hoger wordende piep]";
 		color: red;
 		position: absolute;
@@ -597,7 +638,7 @@ sound 9 hoge piep
 		text-align: center;
 		margin: 5px;
 		margin-top: 20px;
-		animation: piepCC 42s forwards;
+		animation: piepCC 45s forwards;
 	}
 	
 	@keyframes piepCC{
@@ -615,78 +656,164 @@ sound 9 hoge piep
 		}
 	}
 
- .repeat {
-		font-style: italic;
-		font-size: 3em;
 
+/*
+.p42.on span:first-of-type {
+font-size: 2.5em;
+}
+.p42.on span:nth-of-type(2) {
+	font-size: 2.5em;
 	}
+	.p42.on span:nth-of-type(3) {
+		font-size: 2.5em;
+		}
+.p43.on  {
+font-size: 3em;
+}
+*/
 /* grey scale */	
  .sound10 {
 	filter: grayscale(70%);	
 	background: #BCBDB9;
+	border: none;
+	box-shadow: none;
+
 }
-.sound10 .voice1 {
+.sound10 .voice1  {
 	filter: grayscale(0%);
+	
 }
-.sound11 #video-placeholder{
+.sound10 .voice2  {
+	filter: none;
+	filter: grayscale(0%)
+	
+}
+.sound11 {
 	
 	animation: pieppiep 1.1s ease;
 }
 @keyframes pieppiep {
-	0% {}
+	0% {
+		
+	}
 	10% {
-		filter: glow(color=red, strength=100);
+		
 
 	}
 	60% {
-		filter: glow(color=red, strength=0);
+		
 
 	}
 	100%{
-		filter: glow(color=red, strength=100);
-
+	
 	}
 }
 /* vrouw op computer bliep */
 
 .sound12:before {
 	content: "[computer bliep BLIEP bliep]";
-	color: #96B9AB;
+	color: greenyellow;
 	position: absolute;
 	width: 100%;
 	text-align: center;
-	margin: 5px;
-	margin-top: 20px;
+	top:  250px;
 	animation: bliep 2s forwards;
 }
 
 @keyframes bliep{
 	
-	0%{     color: #96B9AB    }
+	0%{     color: #96B9AB  ;
+	opacity: 1;  }
     49%{    color: #96B9AB }
     60%{    color: transparent; }
-    99%{    color:transparent;  }
-    100%{   color: #96B9AB    }
+	99%{    color:transparent;  
+	opacity: 1;}
+	100%{   color: #96B9AB ;
+	opacity: 0;  
+ }
+}
+/* -- electrische trilling CC -- */
+.sound12 #video-placeholder {
+	animation: shake 2s ease;
 
 }
+
+	@keyframes shake {
+		
+		10%, 50% {
+		  transform: translateX(-1px);
+		}
+		
+		20%, 60% {
+		  transform: translateX(2px);
+		}
+	  
+		30%, 70% {
+		  transform: translateX(-4px);
+		}
+	  
+		40%, 80%{
+		  transform: translateX(4px);
+		}
+		100% {
+			box-shadow: 2px 2px 2px 2px #0ff;
+	box-shadow: 0.3s ease-in-out;
+  	margin: auto;
+			}
+	  }
+/* 
+.sound11 #closed-captions:before {
+	content: "[Electrische trilling shaked]";
+	color:  #C500A3;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	margin: 5px;
+	margin-top: 20px;
+	animation: shakingCC 2s forwards;
+}
+
+@keyframes shakingCC{
+	0% {
+		opacity: 1;
+	}
+	99% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+*/
 /* silence */ 
-.sound13 {
+.sound13  {
 	filter: none;
 	background: whitesmoke;
+	filter: none;
 }
-.sound13:before {
+.sound13 #video-placeholder {
+	animation: scale 5s ease;
+}
+@keyframes scale {
+	0% {
+		transform: scale(1)
+	}
+	100% {
+transform: scale(2)
+	}
+}
+.sound13::before {
 	content: "[stilte.]";
 	color: black;
 	position: absolute;
 	width: 100%;
 	text-align: center;
 	margin: 5px;
-	margin-top: 20px;
 	animation: silent 5s forwards;
 	font-size: 1em;
 }
 
-@keyframes silent{
+@keyframes silentlek {
 	0% {
 		opacity: 1;
 	
@@ -697,8 +824,6 @@ sound 9 hoge piep
 	}
 	100% {
 		opacity: 0;
-		
 	}
 }
-
 
