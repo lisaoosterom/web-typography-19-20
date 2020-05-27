@@ -17,41 +17,34 @@ En dat gaan jullie doen.
 
 ## Oplevering
 
-Je levert een werkende versie op, gemaakt met HTML, CSS en JavaScript. Deze staat op Github. In een duidelijke readme documenteer en onderbouw je je ontwerpkeuzes. Je developmentgeschiedenis is terug te vinden op GitHub.
 
-Je levert ook een *screen recording* met audio op van je fragment. Dit is een video van de definitieve versie, gemaakt van jouw browserscherm.
 
-## Typografische restricties
 
-Je *moet* een van deze twee opties kiezen, en je keuze moet je onderbouwen. In je readme staat een uitleg over je overwegingen om de ene of de andere restrictie te kiezen.
+### Font keuze
 
-### Optie 1: Systeemfont
+Voor mijn flosed captions ben ik gegaan voor het systeem font. Ik als ontwerper voel mij altijd prettiger met beperkingen, omdat css nou niet helemaal mijn straatje was, leek het mij wel een goed idee om voor het systeemfont te gaan ipv de brenner. Ook voelde ik niet zo veel bij het brenner font, ik was zelf gegaan voor een soort digital font zoals je ze ziet op je wekker. Bij dit fragemnt heb ik dus gewerkt met normal, cursif en bold. 
 
-De eerste optie is dat je gebruik maakt van het zogenaamde *systeemfont* van degene die naar jouw werk kijkt. Dit font verschilt per operating system, en het verschilt soms zelfs per versie van het operating system. Het is ook aan te passen door de gebruiker zelf. 
+De scene bestaat vooral uit twee stemmen de stem van constant K en die van de computer. Die twee stemmen heb ik apart gestyled. De computer stem heb ik met een blauwe glow gestyled, de glow zodat het die digitale sfeer heeft. De stem van constant K heb ik wit gestyled, zonder gekke poespas. Dit omdat ik goed het onderscheid tussen de twee stemmen wilde laten zien, omdat het niet altijd even duidelijk is wie er spreekt. 
 
-Je hebt dus geen controle over welk lettertype er precies gebruikt wordt. Het levert dus een onzeker, en beperkt typografisch palet op. Je hebt geen *light* versies, of *extrabold*. En ook geen serif en sans-serif versie van dezelfde familie. In dit geval heb je alleen de beschikking over normal, **bold** en _italic_. Dit heeft natuurlijk ook zijn voordelen!
+Op een gegeven moment herhaalt constant K de computer met 'cells' en 'interlinked', die onderdelen heb ik een class 'repeat' meegegeven en groter weergeven. Dit omdat die herhalingen best bij mij binnen komen, zonder geluid lijkt me dit een best droge scene omdat je de dialoog niet helemaal meekrijgt. Door het vergroten van die herhalingen van constant K denk ik dat die op een zelfde manier binnen komen en blijven hangen als dat ik het ervaar.
 
-### Optie 2: Brenner
 
-Je kan er ook voor kiezen om gebruik te maken van de complete Brenner familie. Dit is een zeer uitgebreid en uiterst flexibel font. [Hier kan je je verdiepen in dit font](https://www.typotheque.com/blog/brenner_an_unusual_typeface_family_with_distinct_voices). Als je kiest voor dit font dan heb je de beschikking over een *sans serif*, een *condensed*, een *serif*, een *monotype*, een *slab*, een *display* en een *script* versie. En veel van deze versies hebben varianten van *light* tot *bold*, en allemaal zowel *bold* als *italic*.
+### Testen met Marie
 
-Met Brenner zijn er natuurlijk veel en veel meer mogelijkheden dan met systeemfonts. Dat kan zowel een voordeel als een nadeel zijn. 
+Bij de eerste onmoeting met Marie wist ik zelf niet zo goed wat ik precies kon vragen omdat ik nog totaal geen idee had waar dit project naar heen ging. Er zijn me wel een aantal dingen opgevallen uit de eerste ontmoeting.
+ * Ze houd van lezen en leest ook wel snel
+ * Leest zowel engels als nederlands
+ * Scarcasme is moeilijk te begrijpen vanuit de closed captions
+ * Als ze bij een concert zou zijn zou ze wel viberatie ervaren die uit de bass komt, dus wel een soort tempo ervaren.
+ * Als de gene die spreekt in de film in beeld is is het duidelijk wie er spreekt, als dit niet zo is word het lastiger.
+ * Maakt in het dagelijks leven niet zo veel gebruik van emojis.
+ * Sfeer meekrijgen van een film met veel geluid is lastig
+ 
+ Met deze informatie ben ik aan de slag gegaan en vooral gaan expierimenteren voor test 1, omdat ik geen flauw benul had waar Marie precies behoefde aan had.
 
-Voor een overzicht, zie [de brenner.pdf](brenner.pdf).
+## Expierimenteren.
 
-## Het fragment
-
-Ik heb een fragment voorbereid. Het gaat om twee scenes uit *Blade Runner 2049*. De captions staan in de HTML, en ze verschijnen in sync met de video. [Kijk maar](closed-captions/index.html).
-
-### De captions
-
-De captions staan in de html, in het bestand index.html. Je kan aan elke paragraaf eventueel een of meer classes toevoegen. Bijvoorbeeld `voice1` of `voice2 soft`. Classes voeg je handmatig toe in de html.
-
-Met JavaScript worden er een paar dingen extra gedaan: 
-
-- er wordt aan elke paragraaf een unieke class toegevoegd (`p0`, `p1`, etc)
-- Elk woord wordt in een aparte `span` gezet. Hierdoor kan je elk woord apart stylen, en eventueel ook [na elkaar laten verschijnen](https://github.com/cmda-minor-vid/web-typography-18-19/blob/master/closed-captions/css.css#L41).
-
+Voor de eerste test met Marie had ik veel geexpirimenteerd in het eerste deel van het fragment. Dit heb ik vooral gedaan door rondom het video frame dingen te laten gebeuren. Zo had ik bijvoorbeeld een laser effect over de video heen laten gaan, op het moment dat er een laser geluid voorbij kwam. En had ik de video laten 'skewen'. 
 ### Tijdens het afspelen
 
 Tijdens het afspeelen wordt er een class `on` op de caption gezet als hij moet verschijnen, en een class `off` als hij klaar is. *Zowel class `on` als class `off` blijft op de caption staan!*
