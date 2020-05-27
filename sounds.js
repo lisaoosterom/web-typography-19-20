@@ -10,10 +10,10 @@ sounds = [
 	25, // 6  
 	31, // 7 cirkle 
 	32, // 8 background color > green
-	33, // 9 piep
-	77, // 10 grey scale 
+	32, // 9 piep
+	76, // 10 grey scale 
 85, // 11
 104, // 12 bliep bliep 
-125,// 13 scale eind
+128,// 13 scale eind
 130 //14
 ];
