@@ -61,6 +61,7 @@ font-style: italic;
 ::before {
 	bottom: 20%;
 	font-style: italic;
+	font-size: 1.3em;
 }
 
 #closed-captions .repeat {
@@ -685,14 +686,16 @@ font-size: 3em;
 	filter: grayscale(70%);	
 	background: #BCBDB9;
 }
-
+.sound11 #video-placeholder {
+	box-shadow: 2px 2px 2px 2px #00ffff;
+}
 .sound11 {
-animation: changebackground2 5s ease-in-out;
+animation: changebackground2 5s ease;
 }
 @keyframes changebackground2 {
 	0% {
 		background-color: #BCBDB9;
-		box-shadow: 2px 2px 2px 2px #00ffff;
+		
 	}
 	50% {
 		background: rgb(188,189,185);
@@ -832,7 +835,19 @@ animation: changebackground2 5s ease-in-out;
 	background: whitesmoke;
 }
 .sound13 #video-placeholder {
+	animation: gekkeFilter 5s ease;
 	filter: blur(3.2px) brightness(1.4) contrast(15);	
+}
+@keyframes gekkeFilter {
+0% {
+	filter: blur(2px) brightness(1.4) contrast();	
+
+}
+100% {
+	filter: blur(3.2px) brightness(1.4) contrast(15);	
+
+}
+
 }
 
 .sound13::before {
