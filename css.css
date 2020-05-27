@@ -607,7 +607,7 @@ sound 9 hoge piep
 .sound9 #video-placeholder{
 	border: red;
 	box-shadow: 2px 5px 5px 2px red;
-	animation: piep 43s ease-out;
+	animation: piep 42s ease-out;
 
 }
 
@@ -619,8 +619,8 @@ sound 9 hoge piep
 			  box-shadow: 2px 5px 5px 2px red;
 		  }
 		 
-		  90% {
-			transform: scale(0.7);
+		  98% {
+		
 			opacity: 1;
 			 
 
@@ -684,6 +684,9 @@ font-size: 3em;
 /* grey scale */	
  .sound10 #video-placeholder {
 	filter: grayscale(70%);	
+	
+}
+.sound10 {
 	background: #BCBDB9;
 }
 .sound11 #video-placeholder {
@@ -706,7 +709,7 @@ animation: changebackground2 5s ease;
 }
 .sound11::before{
 	content: '[spAnnEndE OpkOmEndE mUzIEk]';
-	animation: einde 30s forwards;
+	animation: einde 42s forwards;
 	color: #0ff;
 	position: absolute;
 	width: 100%;
@@ -747,7 +750,7 @@ animation: changebackground2 5s ease;
 	}
 }
 /* vrouw op computer bliep */
-
+/*
 .sound12:before {
 	content: "[computer bliep BLIEP bliep]";
 	color: #00FF13;
@@ -771,6 +774,7 @@ animation: changebackground2 5s ease;
 	opacity: 0;  
  }
 }
+*/
 /* -- electrische trilling CC -- */
 .sound12 #video-placeholder {
 	animation: shake 3s ease;

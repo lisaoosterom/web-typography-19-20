@@ -11,7 +11,7 @@ sounds = [
 	31, // 7 cirkle 
 	32, // 8 background color > green
 	32, // 9 piep
-	75.5, // 10 grey scale 
+	75, // 10 grey scale 
 85, // 11
 104, // 12 bliep bliep 
 128,// 13 scale eind
