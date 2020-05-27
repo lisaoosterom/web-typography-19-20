@@ -45,30 +45,23 @@ Bij de eerste onmoeting met Marie wist ik zelf niet zo goed wat ik precies kon v
 ## Expierimenteren.
 
 Voor de eerste test met Marie had ik veel geexpirimenteerd in het eerste deel van het fragment. Dit heb ik vooral gedaan door rondom het video frame dingen te laten gebeuren. Zo had ik bijvoorbeeld een laser effect over de video heen laten gaan, op het moment dat er een laser geluid voorbij kwam. En had ik de video laten 'skewen'. 
-### Tijdens het afspelen
+# Test 1
+De voornaamste feedback van Marie was dat ze geen gevoel had bij deze experimenten, dit kwam vooral omdat ze alsnog geen gevoel had bij de laser en waarom er bv een laser in beeld kwam. De dialoog was wel goed te volgen en het stukje 'fuck off skin job' kwam goed over. 
 
-Tijdens het afspeelen wordt er een class `on` op de caption gezet als hij moet verschijnen, en een class `off` als hij klaar is. *Zowel class `on` als class `off` blijft op de caption staan!*
+# Test 2
+Uit de vorrige test bleek dat Marie geen idee had waarom er een laser geluid in beeld kwam, dus heb ik voor mijn tweede test extra test bij de effecten toegevoegd. Dus als er een laser in beeld kwam , voegde ik het stukje tekst [LAzer] toe. Dit als ondersteuning voor de effecten die de visuele vertalingen zijn van het geluid. Marie reageerde positief op deze toevoegingen, ook vond ze de speelse manier waarop ik de teksten presenteerde goed. Het was haar duidelijk wanneeer de geluiden startte en eindigden, omdat ze tegelijkertijd met het effect werden laten zien. Bij de tweede scene had ik een greyscale filter over de video toegevoegd, dit gaf haar een spannend gevoel en een andere sfeer. 
+De tweede test pakte positief uit voor mij, mijn doel is nu het voortzetten van deze stijl op de rest van het fragment.
 
-De timimg van de captions kan je aanpassen in [closed-captions/captions.js](closed-captions/captions.js).
 
-Er verschijnen ook classes op de body op momenten dat er geluiden worden afgespeeld, zoals `sound1` en `sound2`. Je kan geluiden toevoegen in [closed-captions/sounds.js](closed-captions/sounds.js).
+### Final prototype
 
-*let op,* de geluiden zijn niet compleet, dit zal je zelf moeten aanvullen.
+Voor mijn eindproduct heb ik een aantal dingen aangepast ; kleur van de computerstem, dit omdat bij verschillende achtergronden slecht leesbaar was. Dus ben ik van een aquakleur naar een donkerdere blauwe kleur gegaan. 
+Ook het ik de laatste scene toegevoegd. Deze scene heb ik erg minimaal gedaan, omdat ik juist een contrast wilde met de eerste scene, waar heel veel geluiden plaats vinden. De tweede scene is eigenlijk een herhaling van de eerste. Door middel van de greyscale filter geeft het wel al een heel spannende sfeer af. 
 
-## Een eigen fragment (afgeraden, uitgebreide onderbouwing is nodig)
+## Exclusive design principle's
 
-Je kan er ook voor kiezen om een eigen, *beter* fragment te gebruiken. Dit wordt afgeraden. De tijd die je besteedt aan het zoeken naar dat fragment kan je beter besteden aan het werken aan de opdracht. Bovendien blijkt dat er vaak fragmenten worden gekozen die niet goed voldoen aan de opdracht. Als je een ander fragment kiest dan *moet* je dit goed onderbouwd voorleggen aan je docent. De deadline hiervoor is vrijdagochtend in de eerste week.
+Bij het maken van dit project het ik geleerd over de exclusive design principles. Dat zijn de reguliere design principles, maar dan reversed. Dus
+* 1. Provide a unique experience 
+Deze heb ik zeker wel toegepast door de effecten die ik heb toegevoegd. Ik heb het geluid vertaald tot een visuele experience, speciaal afgesteld op Marie. 
+*2. Ignore situation 
 
-### Waar moet je op letten bij het kiezen van een eigen fragment.
-Lees de opdracht nog eens goed door. Waar gaat het ook al weer precies om? 
-
-Voor een goede onderbouwing van je keuze voor een ander fragment moet je deze vragen in elk geval beantwoorden:
-
-- Welke informatie zit er in de audio die echt niet zichtbaar is?
-- Welke rol speelt de audio in het fragment?
-- Werkt de scene nog zonder geluid?
-- Waarom is dit fragment beter dan het aangeboden fragment?
-
-Je kan dan de nodige HTML en JavaScript genereren door gebruik te maken van [caption generator](https://cmda-minor-vid.github.io/web-typography-18-19/generator/) (in Google Chrome). 
-
-Als je de closed captions wil bewerken dan kan je een tool zoals [Amber Script](https://www.amberscript.com/en) gebruiken. Daar kan je exporteren als `.srt`, en die kan je weer door de generator halen.
