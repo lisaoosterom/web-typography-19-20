@@ -6,7 +6,7 @@ Alleen wordt die auditieve informatie nogal neutraal beschreven. Het geluid van 
 
 Dat kan visueel sterker. 
 
-En dat gaan jullie doen.
+En dat ga ik doen.
 
 ## Leerdoelen
 
@@ -14,9 +14,6 @@ En dat gaan jullie doen.
 - Je kan verborgen nuance uit een audiotrack overtuigend vertalen naar visuele (typografische) beelden
 - Je kan je typografische keuzes onderbouwen.
 - Je hebt de exclusive design principles gebruikt.
-
-## Oplevering
-
 
 
 
@@ -63,5 +60,19 @@ Ook het ik de laatste scene toegevoegd. Deze scene heb ik erg minimaal gedaan, o
 Bij het maken van dit project het ik geleerd over de exclusive design principles. Dat zijn de reguliere design principles, maar dan reversed. Dus
 * 1. Provide a unique experience 
 Deze heb ik zeker wel toegepast door de effecten die ik heb toegevoegd. Ik heb het geluid vertaald tot een visuele experience, speciaal afgesteld op Marie. 
-*2. Ignore situation 
+* 2. Ignore situation
+Ik ontwerp enkel en alleen voor Marie. Wat een ander van mijn prototype vind kan ik dus volledig negeren. Ik focus mij op de wensen en context van Marie. Wat inhoud dat ze graag films kijkt op haar laptop of tv, amper via telefoon en graag extra sfeer te zien krijgt (en dan niet in de vorm van de droge Nederlandse CC's)
+* 3. Be inconsistent/innovative
+Dit heb ik gedaan door in de eerste scene best veel effecten te gebruiken en in de tweede een greyscale en veel minder effecten. Zodat de sfeer in de tweede als anders en wat spannender word ervaren.
+* 4. Take control
+Marie wist zelf nog niet wat ze wilde, dus ik ben als de "expert" aan de slag gegaan om haar ideeen voor te leggen. Test 1 pakte dit minder goed uit, maar door het testen kwam Marie er zelf ook steeds beer achter wat ze wel en niet zocht in het prototype.
+* 5. Offer the best possible solution
+Dit heb ik gedaan door veel aantepassen na test 2 op basis van de feedback. Zo ben ik in test twee tot een goed resultaat gekomen om mijn prototype voor te zetten; effecten met ondersteunende tekst. 
+* 6. Prioritise identity
+Het identificeren heb ik gedaan door middel van de teksten zo simpel mogelijk, maar toch speels te houden. Bij het buzzer geluid heb ik bijvoorbeeld [buzzzzzzzer] als cc toegevoegd ipv [buzzer geluid], dit gaf Marie een minder droge sfeer. Zo werd het kijken van de film minder droog en meer persoonlijk
+* 7. Add nonsense 
+Dit heb ik vooral gedaan met het experiementeren in test 1, waarbij ik nog geen idee had wat Marie verwachten. Dus heb ik veel verschillende dingen geprobeerd met het schalen en vervormen van het frame. Dit experiementeren deed Marie niet zo veel, maar door middel van de extra tekst pakte deze expierimenten heel leuk uit juist.
+
+
+
 
